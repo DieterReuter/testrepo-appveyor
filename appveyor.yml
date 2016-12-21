@@ -7,7 +7,7 @@ install:
   - docker --version
 
 build_script:
-  - ps: .\build.ps
+  - ps: .\build.ps1
 
 deploy_script:
   - ps: .\deploy.ps1
