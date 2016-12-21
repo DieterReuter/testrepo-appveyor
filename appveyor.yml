@@ -2,9 +2,11 @@ version: 1.0.{build}
 
 install:
   - choco install -y docker -pre
+  - choco install -y docker-compose
   - choco install -y curl
   - curl.exe -s http://whatismijnip.nl
   - docker --version
+  - docker-compose --version
 
 build_script:
   - ps: .\build.ps1
