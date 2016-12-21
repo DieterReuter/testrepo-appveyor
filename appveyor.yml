@@ -5,6 +5,7 @@ install:
   - choco install -y docker-compose
   - choco install -y curl
   - curl.exe -s http://whatismijnip.nl
+  - echo
   - docker --version
   - docker-compose --version
 
