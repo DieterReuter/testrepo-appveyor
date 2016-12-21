@@ -9,7 +9,8 @@ install:
   - docker --version
   #- docker version
   #- docker info
-    
+  - set
+  
 build_script:
   - ps: .\build.ps1
 
