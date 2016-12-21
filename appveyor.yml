@@ -4,11 +4,13 @@ install:
   - choco install -y docker -pre
   - choco install -y docker-compose
   - choco install -y curl
-  - curl.exe -s http://whatismijnip.nl
+  - ps: (curl.exe -s http://whatismijnip.nl) | Write-Output
   - echo ""
-  - docker --version
   - docker-compose --version
-
+  - docker --version
+  - docker version
+  - docker info
+    
 build_script:
   - ps: .\build.ps1
 
